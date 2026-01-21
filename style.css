@@ -59,3 +59,81 @@ h2{
     margin-top: 100px; */
     /* margin: 30px 50px 70px 90px; */
 }
+
+.box1{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    /* flex: 1; */
+    order: 2;
+}
+
+.box2{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    /* flex: 1; */
+    order: 3;
+}
+
+.box3{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    /* flex: 1; */
+    order: 1;
+}
+
+.box4{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.box5{
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* height: 500px; */
+    /* border: 2px solid black; */
+    /* align-items: center; */
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    /* align-content: space-between; */
+}
+
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+}
+
+.box7{
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+}
+
+.box8{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+}
+
+.box9{
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+}
+
+.box10{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
