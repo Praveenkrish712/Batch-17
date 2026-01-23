@@ -1,5 +1,5 @@
 *{
-    /* background-color: gray; */
+    /* background-color: red; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -161,4 +161,83 @@ h1{
     top: 50px; */
 
     /* top: 20px; */
+}
+
+.para{
+    padding: 20px;
+    background-color: slateblue;
+    color: white;
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,1fr));
+
+}
+
+.items{
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerbox{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    grid-auto-flow: row;
+}
+
+.item1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1/4; */
+    grid-column: span 3;
+}
+
+.item2{
+    grid-row: span 3;
+}
+
+.layout > div{
+    background-color: #ebabac;
+    border: 1px solid black;
+    font-size: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10vh 80vh 10vh; 
+    grid-template-areas: 
+    "h h h h"
+    "sb1 m m sb2"
+    "f f f f";
+}
+
+.haeder{
+    grid-area: h;
+}
+
+.sidebar1{
+    grid-area: sb1;
+}
+
+.sidebar2{
+    grid-area: sb2;
+}
+
+.main{
+    grid-area: m;
+}
+
+.footer{
+    grid-area: f;
 }
