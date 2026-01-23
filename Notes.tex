@@ -98,3 +98,15 @@ Position - to move one place to another place
 ==> Sticky 
 
 Grid (display) - two dimensional layout
+   ==> grid-template-columns: repeat(4,1fr);
+   ==>  grid-template-rows: 10vh 80vh 10vh; 
+   ==>  grid-template-areas: 
+       "h h h h"
+       "sb1 m m sb2"
+       "f f f f";
+   ==>  grid-auto-flow: row;
+   ==>  grid-column-start: 1;
+   ==>  grid-column-end: 4;
+   ==>  grid-column: 1/4;
+   ==>  grid-column: span 3;
+   ==>  grid-area: h;
