@@ -18,9 +18,9 @@ h1{
     letter-spacing: 10px;
 } */
 
-h2{
+/* h2{
     color: red;
-}
+} */
 
 .Selector > h1{
     color: pink;
@@ -138,9 +138,9 @@ h2{
     background-color: coral;
 }
 
-h1{
+/* h1{
     background-color: red;
-}
+} */
 
 .bluebox{
     width: 300px;
@@ -240,4 +240,92 @@ h1{
 
 .footer{
     grid-area: f;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+
+}
+
+.square:hover{
+    width: 400px;
+    background-color: black;
+    transition-duration: 3s;
+    /* transition-property: background-color; */
+    transition-timing-function: cubic-bezier(1,-0.71, 0.12, 0.79);
+    transform: translateY(20px);
+}
+
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border-radius: 50%;
+    animation-name: circle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes circle {
+    25%{
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        left: 5px;
+        top: 5px;
+    }
+    50%{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        left: 10px;
+        top: 10px;
+    }
+    75%{
+        width: 300px;
+        height: 300px;
+        background-color: gold;
+        left: 20px;
+        top: 20px;
+    }
+    100%{
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    h1{
+        color: greenyellow;
+        background-color: black;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2{
+        color: hotpink;
+        background-color: gray;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    p{
+        color: darkred;
+        background-color: black;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+        text-transform: capitalize;
+        /* width: 70%; */
+    }
 }

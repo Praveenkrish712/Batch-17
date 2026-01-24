@@ -90,14 +90,14 @@ vi) Align content (Y)(set the height) (only flex wrap is enable then only it wil
 vii) flex (on item) to be increase the empty space(width)
 viii) order - change the visual order of the property
 
-Position - to move one place to another place
+9)Position - to move one place to another place
 ==> static - default
 ==> Relative 
 ==> Absolute - no static parent
 ==> Fixed - 
 ==> Sticky 
 
-Grid (display) - two dimensional layout
+10)Grid (display) - two dimensional layout
    ==> grid-template-columns: repeat(4,1fr);
    ==>  grid-template-rows: 10vh 80vh 10vh; 
    ==>  grid-template-areas: 
@@ -110,3 +110,23 @@ Grid (display) - two dimensional layout
    ==>  grid-column: 1/4;
    ==>  grid-column: span 3;
    ==>  grid-area: h;
+
+11) Transition and Animation
+==> Transition: whenever we hover tha thing some action will act
+  transition-duration: 3s;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(1,-0.71, 0.12, 0.79), ease-in, ease-out, ease-in-out and linear;
+
+==> transform : rotateY(45deg), scaleY(2), translateY(20px)
+
+==> Animation: whenever the site will reload some action will act
+    Animation-name: circle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+ ==> using Keyframes and the name into the key frame( using from and to or % like 50%,75%,100%)
+  
+12) Media Queries or Responsive Design
+==> mobile - 320px to 600px
+==> tab    - 601px to 800px
+==> lap/desktop - above 801px
